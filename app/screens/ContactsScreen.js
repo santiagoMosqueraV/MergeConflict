@@ -2,11 +2,11 @@ import {View, Text, StyleSheet, Button} from 'react-native'
 
 export const Contacts = ({navigation}) => {
     return <View style={styles.container}>
-        <Text>Estoy en contact</Text>
+        <Text>Contactos de clientes</Text>
         <Button
             title='HOME'
             onPress={()=>{
-                navigation.navigate('HomeNav');
+                navigation.navigate('Clientes');
             }}
         />
     </View>
