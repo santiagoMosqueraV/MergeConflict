@@ -2,13 +2,19 @@ import { View, Text, StyleSheet, Button } from 'react-native'
 
 export const Home = ({ navigation }) => {
     return <View style={styles.container}>
-        <Text>Bienvenido a mi app</Text>
+        <Text>Bienvenido a mi Home</Text>
 
         <View style={styles.botones}>
 
             <View style={styles.boton1}>
                 <Button
-                    title='CONTACTS'
+                    title='CLIENTES'
+                    onPress={() => {
+                        navigation.navigate('ContactsNav');
+                    }}
+                />
+                <Button
+                    title='DIRECCIONES'
                     onPress={() => {
                         navigation.navigate('ContactsNav');
                     }}
