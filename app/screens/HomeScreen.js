@@ -8,7 +8,13 @@ export const Home = ({ navigation }) => {
 
             <View style={styles.boton1}>
                 <Button
-                    title='CONTACTS'
+                    title='CLIENTES'
+                    onPress={() => {
+                        navigation.navigate('ContactsNav');
+                    }}
+                />
+                <Button
+                    title='DIRECCIONES'
                     onPress={() => {
                         navigation.navigate('ContactsNav');
                     }}
