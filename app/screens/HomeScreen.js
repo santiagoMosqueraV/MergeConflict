@@ -13,6 +13,12 @@ export const Home = ({ navigation }) => {
                         navigation.navigate('ContactsNav');
                     }}
                 />
+                <Button
+                    title='Productos'
+                    onPress={() => {
+                        navigation.navigate('ProductNav');
+                    }}
+                />
             </View>
 
 
